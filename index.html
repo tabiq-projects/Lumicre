@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumiere Salon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <div class="page-loader">
+    <div class="loader-content">
+      <div class="loader-logo">L</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">L</span>
+        <span class="logo-text">Lumiere</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#about" data-text="About">About</a>
+        <a href="#services" data-text="Services">Services</a>
+        <a href="#gallery" data-text="Gallery">Gallery</a>
+        <a href="#contact" data-text="Contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn-book">
+        <span>Book Now</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn-book mobile-book">Book Appointment</a>
+    </nav>
+  </div>
+
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <img src="images/bright_modern_hair_s_d1ead2dc.jpg" alt="Modern Hair Salon Interior">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge anim-item">
+        <span class="badge-dot"></span>
+        <span>Premium Hair Studio</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line anim-item">
+          <span class="title-word">Where</span>
+          <span class="title-word">Beauty</span>
+        </span>
+        <span class="title-line anim-item">
+          <span class="title-word italic">Meets</span>
+          <span class="title-word italic">Art</span>
+        </span>
+      </h1>
+      <p class="hero-subtitle anim-item">
+        Experience luxury hair care in the heart of SoHo. Our master stylists 
+        craft personalized looks that elevate your natural beauty.
+      </p>
+      <div class="hero-actions anim-item">
+        <a href="#contact" class="btn-hero-primary">
+          <span>Book Appointment</span>
+          <div class="btn-shine"></div>
+        </a>
+        <a href="#contact" class="btn-hero-secondary">
+          <span>View Services</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="hero-stats anim-item">
+        <div class="hero-stat">
+          <span class="stat-value">10+</span>
+          <span class="stat-text">Years</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-value">5K+</span>
+          <span class="stat-text">Clients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-value">4.9</span>
+          <span class="stat-text">Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+    <div class="hero-image-float">
+      <img src="images/woman_with_beautiful_ac3fa8c2.jpg" alt="Beautiful Hair">
+    </div>
+  </section>
+
+  <section id="marquee-section">
+    <div class="marquee">
+      <div class="marquee-content">
+        <span>Hair Styling</span>
+        <span class="marquee-dot"></span>
+        <span>Color</span>
+        <span class="marquee-dot"></span>
+        <span>Treatments</span>
+        <span class="marquee-dot"></span>
+        <span>Luxury Experience</span>
+        <span class="marquee-dot"></span>
+        <span>Hair Styling</span>
+        <span class="marquee-dot"></span>
+        <span>Color</span>
+        <span class="marquee-dot"></span>
+        <span>Treatments</span>
+        <span class="marquee-dot"></span>
+        <span>Luxury Experience</span>
+        <span class="marquee-dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <div class="about-images">
+          <div class="about-img-main anim-scale">
+            <img src="images/close_up_of_hairdres_b9db27f1.jpg" alt="Styling">
+          </div>
+          <div class="about-img-secondary anim-scale delay-2">
+            <img src="images/shelf_with_beauty_pr_a6318118.jpg" alt="Products">
+          </div>
+          <div class="about-experience anim-slide-right delay-3">
+            <span class="exp-number">10+</span>
+            <span class="exp-text">Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <span class="section-tag anim-item">About Us</span>
+        <h2 class="section-title anim-item">
+          <span class="title-reveal">Crafting Beauty</span>
+          <span class="title-reveal">Since 2015</span>
+        </h2>
+        <p class="about-desc anim-item delay-1">
+          At Lumiere Atelier, we believe that great hair starts with great care. 
+          Our team of master stylists brings decades of combined experience to 
+          every appointment, ensuring you leave feeling confident and beautiful.
+        </p>
+        <p class="about-desc anim-item delay-2">
+          We've created a sanctuary where artistry meets relaxation. Using only 
+          premium products and cutting-edge techniques, we transform not just 
+          hair, but the way you feel about yourself.
+        </p>
+        <div class="about-features anim-item delay-3">
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span>Premium Products</span>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span>Expert Stylists</span>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span>Relaxing Ambiance</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-learn-more anim-item delay-4">
+          <span>Learn More About Us</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services-bg">
+      <img src="images/soft_beige_abstract__726afef5.jpg" alt="">
+    </div>
+    <div class="services-container">
+      <div class="services-header">
+        <span class="section-tag anim-item">What We Offer</span>
+        <h2 class="section-title mega anim-item">
+          <span class="title-reveal">Our</span>
+          <span class="title-reveal">Services</span>
+        </h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card anim-item" data-service="haircuts">
+          <div class="service-number">01</div>
+          <div class="service-content">
+            <h3>Haircuts & Styling</h3>
+            <p>Precision cuts tailored to your face shape and lifestyle</p>
+            <ul class="service-prices">
+              <li><span>Women's Haircut</span><span>$120+</span></li>
+              <li><span>Trim & Shape</span><span>$85+</span></li>
+              <li><span>Blowout</span><span>$65+</span></li>
+            </ul>
+          </div>
+          <div class="service-visual">
+            <img src="images/man_getting_haircut__5cfe0460.jpg" alt="Haircut">
+          </div>
+        </div>
+
+        <div class="service-card anim-item delay-1" data-service="color">
+          <div class="service-number">02</div>
+          <div class="service-content">
+            <h3>Color & Highlights</h3>
+            <p>From subtle dimension to bold transformations</p>
+            <ul class="service-prices">
+              <li><span>Full Highlights</span><span>$280+</span></li>
+              <li><span>Root Touch-Up</span><span>$140+</span></li>
+              <li><span>Color Correction</span><span>Consult</span></li>
+            </ul>
+          </div>
+          <div class="service-visual">
+            <img src="images/hair_highlights_application_salon.png" alt="Color">
+          </div>
+        </div>
+
+        <div class="service-card anim-item delay-2" data-service="treatments">
+          <div class="service-number">03</div>
+          <div class="service-content">
+            <h3>Treatments</h3>
+            <p>Restore, strengthen, and revitalize your hair</p>
+            <ul class="service-prices">
+              <li><span>Shine Gloss</span><span>$55+</span></li>
+              <li><span>Keratin Smooth</span><span>$300+</span></li>
+              <li><span>Scalp Treatment</span><span>$45+</span></li>
+            </ul>
+          </div>
+          <div class="service-visual">
+            <img src="images/luxury_hair_treatment_salon.png" alt="Treatment">
+          </div>
+        </div>
+      </div>
+
+      <div class="services-cta anim-item">
+        <p>Can't find what you're looking for?</p>
+        <button class="btn-services">
+          <span>View Full Menu</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-banner">
+    <div class="cta-container">
+      <div class="cta-content anim-item">
+        <h3>Ready for a Transformation?</h3>
+        <p>Book your appointment today and experience the Lumiere difference.</p>
+      </div>
+      <a href="#contact" class="btn-cta anim-item delay-1">
+        <span>Book Your Visit</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="gallery-container">
+      <div class="gallery-header">
+        <span class="section-tag anim-item">Our Work</span>
+        <h2 class="section-title mega anim-item">
+          <span class="title-reveal">The</span>
+          <span class="title-reveal">Gallery</span>
+        </h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large anim-item" data-img="images/woman_with_beautiful_ac3fa8c2.jpg">
+          <img src="images/woman_with_beautiful_ac3fa8c2.jpg" alt="Gallery 1">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Color & Style</span>
+            <span class="gallery-view">View</span>
+          </div>
+        </div>
+        <div class="gallery-item anim-item delay-1" data-img="images/modern_bright_minima_3d5ae5bb.jpg">
+          <img src="images/modern_bright_minima_3d5ae5bb.jpg" alt="Gallery 2">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Our Space</span>
+            <span class="gallery-view">View</span>
+          </div>
+        </div>
+        <div class="gallery-item anim-item delay-2" data-img="images/close_up_of_hairdres_b9db27f1.jpg">
+          <img src="images/close_up_of_hairdres_b9db27f1.jpg" alt="Gallery 3">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Precision</span>
+            <span class="gallery-view">View</span>
+          </div>
+        </div>
+        <div class="gallery-item tall anim-item delay-1" data-img="images/man_getting_haircut__5cfe0460.jpg">
+          <img src="images/man_getting_haircut__5cfe0460.jpg" alt="Gallery 4">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Men's Cut</span>
+            <span class="gallery-view">View</span>
+          </div>
+        </div>
+        <div class="gallery-item anim-item delay-2" data-img="images/luxury_modern_hair_salon_interior.png">
+          <img src="images/luxury_modern_hair_salon_interior.png" alt="Gallery 5">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Our Salon</span>
+            <span class="gallery-view">View</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="Gallery Image">
+  </div>
+
+  <section id="testimonials">
+    <div class="testimonials-container">
+      <span class="section-tag center anim-item">Testimonials</span>
+      <h2 class="section-title mega center anim-item">
+        <span class="title-reveal">What Our</span>
+        <span class="title-reveal">Clients Say</span>
+      </h2>
+      
+      <div class="testimonials-slider anim-item delay-1">
+        <div class="testimonial-card active">
+          <div class="quote-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11 7H7C5.89543 7 5 7.89543 5 9V13C5 14.1046 5.89543 15 7 15H9C9 16.6569 7.65685 18 6 18V20C8.76142 20 11 17.7614 11 15V7ZM19 7H15C13.8954 7 13 7.89543 13 9V13C13 14.1046 13.8954 15 15 15H17C17 16.6569 15.6569 18 14 18V20C16.7614 20 19 17.7614 19 15V7Z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Lumiere transformed my hair completely. The attention to detail and 
+            personalized service made me feel like a VIP. I've never had a better 
+            haircut experience in my life."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <span class="author-name">Sarah Mitchell</span>
+              <span class="author-title">Regular Client</span>
+            </div>
+            <div class="rating">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-image-header anim-item">
+      <img src="images/luxury_modern_hair_salon_interior.png" alt="Our Salon">
+    </div>
+    <div class="contact-container">
+      <div class="contact-left">
+        <span class="section-tag anim-item">Get In Touch</span>
+        <h2 class="section-title anim-item">
+          <span class="title-reveal">Let's Create</span>
+          <span class="title-reveal">Something Beautiful</span>
+        </h2>
+        
+        <div class="contact-info">
+          <div class="contact-item anim-item delay-1">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Visit Us</span>
+              <span class="contact-value">123 Mercer Street, SoHo<br>New York, NY 10012</span>
+            </div>
+          </div>
+          <div class="contact-item anim-item delay-2">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M22 16.92V19.92C22 20.4704 21.7807 20.9978 21.3897 21.3891C20.9987 21.7804 20.4718 22 19.92 22C10.4 22 2 13.6 2 4.08C2 3.52815 2.21964 3.00127 2.61091 2.60976C3.00218 2.21825 3.52893 1.9987 4.08 2H7.08C8.04 2 8.93 2.55 9.38 3.38L10.5 5.5C10.8317 6.11396 10.8317 6.88604 10.5 7.5L9.5 9.5C10.57 11.57 12.43 13.43 14.5 14.5L16.5 13.5C17.114 13.1683 17.886 13.1683 18.5 13.5L20.62 14.62C21.45 15.07 22 15.96 22 16.92Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Call Us</span>
+              <span class="contact-value">+1 (212) 555-0199</span>
+            </div>
+          </div>
+          <div class="contact-item anim-item delay-3">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Hours</span>
+              <span class="contact-value">Mon-Sat: 9am - 7pm<br>Sunday: Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links anim-item delay-4">
+          <a href="#" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM8.82 17.32C8.44 17.32 8.14 17.04 8.14 16.64V9.36C8.14 8.96 8.44 8.68 8.82 8.68H10.86L10.86 7.32C10.86 6.92 11.16 6.64 11.54 6.64H12.46C12.84 6.64 13.14 6.92 13.14 7.32V8.68H14.18C14.56 8.68 14.86 8.96 14.86 9.36V10.2C14.86 10.6 14.56 10.88 14.18 10.88H13.14V15.12H14.18C14.56 15.12 14.86 15.4 14.86 15.8V16.64C14.86 17.04 14.56 17.32 14.18 17.32H8.82Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right anim-item delay-2">
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interest</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option value="haircut">Haircut & Styling</option>
+              <option value="color">Color & Highlights</option>
+              <option value="treatment">Treatments</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your desired look..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span>Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand anim-item">
+          <span class="footer-logo">Lumiere</span>
+          <p>Where beauty meets artistry. Creating stunning transformations since 2015.</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col anim-item delay-1">
+            <h4>Quick Links</h4>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col anim-item delay-2">
+            <h4>Services</h4>
+            <a href="#">Haircuts</a>
+            <a href="#">Coloring</a>
+            <a href="#">Treatments</a>
+            <a href="#">Styling</a>
+          </div>
+          <div class="footer-col anim-item delay-3">
+            <h4>Contact</h4>
+            <span>123 Mercer Street</span>
+            <span>New York, NY 10012</span>
+            <span>+1 (212) 555-0199</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Lumiere Atelier. All rights reserved.</p>
+        <p class="designer-credit">Design By <a href="https://tabiqahad.in" target="_blank">Tabiq Ahmad</a></p>
+        <p class="demo-note">This is a demo project for designer portfolio website</p>
+        <div class="footer-social">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast">
+    <div class="toast-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="toast-content">
+      <strong>Message Sent!</strong>
+      <p>We'll get back to you shortly.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
